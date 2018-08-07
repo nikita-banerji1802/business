@@ -1,0 +1,16 @@
+@import '../../styles';
+@include general;
+.skill-area {
+    position: relative;
+    background: $background url("../../assets/image/content/skill.jpg") no-repeat fixed;
+    .overlay {
+        background: $trans-black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        color: $white;
+        font-weight: 500;
+    }
+}

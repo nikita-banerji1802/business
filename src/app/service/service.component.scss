@@ -1,0 +1,29 @@
+@import '../../styles';
+@include general;
+
+.services-area {
+    text-align:center;
+    color: $black;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 40px;
+    transition: 0.9s ease-in-out;
+    p {
+        color: $black;
+        font-size: 16px;
+    }
+    &:hover h4 {
+        color: $blue;
+    }    
+    .services-icon {
+        color: $black;
+        display: inline-block;
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 20px;
+        
+    }
+    &:hover .services-icon {
+        color: $blue;
+    }
+}

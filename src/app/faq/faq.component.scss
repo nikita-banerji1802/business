@@ -1,0 +1,80 @@
+@import '../../styles';
+@include general;
+.faq-area { 
+    .faq {
+        margin-top: 5px;
+        margin-bottom: 0;
+        border-radius: 4px;
+        padding:0 20px;
+        border: 1px solid $grey;
+        color: $black;   
+        cursor: pointer;
+        .active {
+            color: $blue;
+        }  
+        h5 {
+            .faq-head {
+                margin-left:5%;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 0;
+                margin-top: 10px;
+                margin-left: 40px;
+                @media (max-width: 800px) {
+                    margin-left: 10%;
+                    padding-left: 2%;
+                    font: {
+                        size: 18px;
+                        weight: 600; 
+                    }
+                }
+                
+            }
+            @media (max-width: 700px) {
+                font: {
+                    size: 17px;
+                    weight: 500;
+                }
+            }           
+        }
+        .faq-detail {
+            padding: 15px 15px 0px 50px;
+            border-top: 1px solid $grey;
+            p {
+                margin: 0 0 15px;
+            }
+        }
+    }
+}
+.tab-menu {
+    border-bottom: none;
+    a {
+        background: rgba(0, 0, 0, 0);
+        border-radius: 0;
+        color: $black;
+        display: block;
+        margin-right: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        &.active {
+            border-bottom: 1px solid $white;
+            color: $blue;
+        }
+        @media (max-width:850px) {
+            padding: 10px 10px;
+            margin-right: 1px;
+            font-size: 15px;
+        }
+    }    
+}
+.tab-content {
+    border: 1px solid $offwhite;
+    padding: 0 15px 15px;
+    h3 {
+        @media (max-width: 600px) {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,237 @@
+@import '../styles';
+//<--------------------------Head Scss-------------------------------------------->
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.40);
+    @media (max-width: 600px) {
+        position: fixed;
+        background:black;
+    }
+    z-index: 20;
+    .logo {
+        h1 {
+            color: $white;
+            padding: 0;
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        span {
+            color: $blue;
+            margin:0;
+            padding:0;
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    background: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20;
+    .logo {
+        h1 {
+            color: $white;
+            padding: 0;
+            margin: 0;
+            font: {
+                size: 36px;
+                weight: bold;
+            }
+            line-height: 1;
+        }
+        span {
+            color: $blue;
+            margin:0;
+            padding:0;
+        }
+    }
+}
+.business-body {
+    position: absolute;
+    @media (max-width: 600px) {
+        top: 54px;
+    }
+}
+
+.menu {
+    a {
+        transition: 0.2s;
+        background: rgba(0, 0, 0, 0);
+        color: $white;
+        font: {
+            size: 18px;
+            weight: 550;
+        }
+        padding: 24px 0px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        &:hover {
+            color: $blue;
+        }
+    }
+    li {
+        display: inline-block;
+        padding:0px 13px;
+    }
+    .active {
+        a {
+            background: rgba(0, 0, 0, 0);
+            color: $white;
+            position: relative;    
+            &:hover {
+                background: none;
+                color: $white;
+            }   
+            &:focus {
+                color: $white;
+            }
+            &:after {
+                border: 1px solid $white;
+                bottom: 0px;
+                content: "";
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+        }        
+    }
+}
+
+//<---------------------------Footer Scss------------------------------------------->
+.footer-area {
+    padding: 40px 0;
+    background: #f9f9f9;
+    .logo {
+        padding-bottom: 20px;
+        h2 {
+            padding: 0;
+            color: black;
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        span {
+            color: $blue;
+        }
+    }
+    p {
+        margin-bottom: 10%;
+    }
+    .footer-icons {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin: 2%;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: $black;
+            text-align: center;
+            border: 1px solid $black;
+            border-radius: 50%;
+            padding: 2%;
+            font: {
+                weight: 500;
+                size: 20px;
+            } 
+            width: 50px;
+            height: 50px;
+            vertical-align: center;
+            transition: 0.4s;
+            &:hover {
+                background: $blue;
+                color: $white;
+                border-color: $blue
+            }
+        }
+    }
+    .information {
+        h4 {
+            color: $black;
+            letter-spacing: 2px;
+            font: {
+                weight: 600;
+                size: 19px;
+            }
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+    }
+    .footer-contacts {
+        p {
+            margin: 5% 0;
+            color: $black;
+        }
+        span {
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+    .instagram {
+        h4 {
+            color: $black;
+            font: {
+                size: 19px;
+                weight: 600;
+            }
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .insta-post {
+            img {
+                width: 33.33%;
+                float: left;
+                padding: {
+                    left: 1%;
+                    top: 1%;
+                }
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bottom-footer {
+    text-align: center;
+    background: #f1f1f1;
+    p {
+        margin: {
+            top: 0.7%;
+            bottom: 0;
+        }
+    }
+    span {
+        color: $blue;
+    }
+}
+
+//<---------------------------Top to Arrow Scss------------------------------------------->
+.to-top-arrow {
+    text-decoration: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: $white;
+    background: $blue;
+    padding: 6px 12px 9px 12px;
+    border-radius: 4px;
+    transition: 0.2s;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+$blue:#3EC1D5;
+$black: #444;
+$white: #fff;
+$offwhite: #ccc;
+$grey: #ddd;
+$trans-black: rgba(0, 0, 0, 0.8);
+$trans-black2: rgba(0, 0, 0, 0.8);
+$background: rgba(248, 248, 248, 0.8);
+
+::selection {
+    color: $black;
+    background: $blue;
+}
+
+body {
+    background: $white;
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: left;
+    overflow-x: hidden;
+    line-height: 26px;
+}
+.container {
+    max-width: 1500px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    color: $black;
+    font-weight: 500;
+}
+p {
+    margin: 0 0 15px;
+    color: $black;
+} 
+
+a {
+    font-family: 'Raleway'; 
+}
+@mixin general {
+    .heading {
+        text-align: center;
+        h2 {
+            display: inline-block;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 70px;
+            position: relative;
+            &:after {
+                border: 1px solid $black;
+                bottom: -20px;
+                content: "";
+                left: 0;
+                margin: 0 auto;
+                position: absolute;
+                right: 0;
+                width: 40%;
+        }
+        @media (max-width: 600px) {
+            font-size: 30px;
+        }
+        }
+    }
+    .area-padding {
+        padding: 50px 0px 30px;
+    }
+    .area-padding-2 {
+        padding: 50px 0px 50px;
+        text-align: center;
+    }
+}

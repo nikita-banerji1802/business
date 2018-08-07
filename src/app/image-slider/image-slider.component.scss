@@ -1,0 +1,11 @@
+@import '../../styles';
+.icon {
+    transition:0.9s ease-in-out;
+    font-size:70px;
+    &:hover {
+        color: $blue;
+    }
+    @media (max-width: 600px) {
+        font-size:35px;
+    }
+}

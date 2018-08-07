@@ -1,20 +1,175 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- ======Header=======-->
+<header>
+  <div class="head" id="blog-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-md pb-0" style="padding:0.5rem 0.5rem;">
+            <!--Logo-->
+            <a class="navbar-brand logo" href="#">
+              <h1>
+                <span>e</span>Business
+              </h1>
+            </a>
+            <!--Collapse Button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars" aria-hidden="true" style="color:white"></i>
+            </button>
+            <!--NavBar Content-->
+            <div class="collapse navbar-collapse menu" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>  
+            <!--Navbar Content ends here-->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div> 
+</header>
 
+<!--Body Of the Blog-->
+<div class="business-body" id="business">
+
+  <!--======Image Slider=====-->
+  <app-image-slider></app-image-slider>
+
+  <!--=========About=========-->
+  <app-about></app-about>
+
+  <!--=======Service========-->
+  <app-service></app-service>
+
+  <!--========Skills=========-->
+  <app-skill></app-skill>
+
+  <!--=========Faq===========-->
+  <app-faq></app-faq>
+
+  <!--=======Subscribe=======-->
+  <app-subscribe></app-subscribe>
+
+  <!--========Team===========-->
+  <app-team></app-team>
+
+  <!--========Reviews=========-->
+  <app-review></app-review>
+
+  <!--========Portfolio=======-->  
+  <app-portfolio></app-portfolio>
+
+  <!--========Price===========-->
+  <app-price></app-price> 
+
+  <!--======Testimonial=======-->
+  <app-testimonial></app-testimonial>
+
+  <!--========Blog============-->
+  <app-blog></app-blog>
+
+  <!--=Welcome and Contact US=-->
+  <app-contact-us></app-contact-us>
+
+  <!--==========Footer========-->
+  <footer>
+  <div class="footer-area">
+    <div class="container">
+      <div class="row">
+        <!--Column 1-->
+        <div class="col-md-4 col-sm-4 col-xs-12 mb-4">
+          <div class="logo">
+            <h2><span>e</span>Business</h2>
+          </div>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+          </p>  
+          <div class="footer-icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+            </ul>
+        </div>      
+        </div>
+        <!--Column 2-->
+        <div class="col-md-4 col-sm-4 col-xs-12 mb-4">
+          <div class="information">
+            <h4>information</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+          <div class="footer-contacts">
+            <p><span>Tel:</span> +123 456 789</p>
+            <p><span>Email:</span> contact@example.com</p>
+            <p><span>Working Hours:</span> 9am-5pm</p>
+          </div>
+        </div>
+        <!--Column 3-->
+        <div class="col-md-4 col-sm-4 col-xs-12 mb-4">
+          <div class="instagram">
+            <h4>Instagram</h4>
+            <div class="insta-post">
+              <img src="../assets/image/content/portfolio/1.jpg"/>
+              <img src="../assets/image/content/portfolio/2.jpg"/>
+              <img src="../assets/image/content/portfolio/3.jpg"/>
+              <img src="../assets/image/content/portfolio/4.jpg"/>
+              <img src="../assets/image/content/portfolio/5.jpg"/>
+              <img src="../assets/image/content/portfolio/6.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <br>
+          <p>© Copyright <b>eBusiness</b>. All Rights Reserved</p>
+          <p>Designed by <span>BootstrapMade</span></p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+  <!--======To top Arrow======-->
+  <a class="to-top-arrow" href="#business">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  
+</div>

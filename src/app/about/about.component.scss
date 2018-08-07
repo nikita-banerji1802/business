@@ -1,0 +1,46 @@
+@import '../../styles';
+@include general;
+.about-area {
+    background-color: #f9f9f9;
+    .about-head {
+        text-decoration: none;
+        h4 {
+            display: inline-block;
+            font: {
+                size: 17px;
+                weight: 600;
+            }
+            margin-bottom: 0;
+            padding: 0 0 10px;
+            text-transform: uppercase;
+            display: block;
+        }    
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            color: $black;
+            display: block;
+            padding: 5px 0;
+            i {
+                color: $blue;
+                padding-right: 0;
+                font-size: 12px;
+            }
+            .about-check {
+                width: 3%;
+                float: left;
+                @media (max-width: 600px) {
+                    width: 6%;                    
+                }
+            }
+            .about-ebuss {
+                padding-left: 7px;
+                float: left;
+                width: 90%;
+            }
+        }
+    }
+}

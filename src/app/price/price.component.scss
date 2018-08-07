@@ -1,0 +1,88 @@
+@import '../../styles';
+@include general;
+.price-area {
+    .list {
+        border: 1px solid $offwhite;
+        text-align: center;
+        background: $white;
+        position: relative;
+        overflow: hidden;
+        h3 {
+            color: $black;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 25px;
+            padding: 30px 0 20px;
+            text-transform: uppercase;
+        }
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 25px;
+        }
+        li {
+            border-bottom: 1px solid $offwhite;
+            color: #666;
+            padding: 12px 15px;
+            position: relative;
+            text-align: left;
+        }
+        .check {
+            i {
+                color: $blue;
+                padding-right: 10%;
+                float:right;
+            }
+        }
+        .cross {
+             i {
+                color: indianred;
+                padding-right: 10%;
+                float:right;
+            }
+        }
+        .button1 {
+            background: $black;
+            border: 1px solid $black;
+            color: $white;
+            margin-bottom: 25px;
+            padding: 10px 35px;
+            text-transform: uppercase;
+            transition: 0.4s;
+            cursor: pointer;
+            border-radius: 30px;
+            &:hover {
+                background: transparent;
+                color: $black;
+            }
+        }
+        .button2 {
+            background: $blue;
+            border: 1px solid $blue;
+            color: $white;
+            margin-bottom: 25px;
+            padding: 10px 35px;
+            text-transform: uppercase;
+            transition: 0.4s;
+            cursor: pointer;
+            border-radius: 30px;
+            &:hover {
+                border-color: $black;
+                background: transparent;
+                color: $black;
+            }
+        }
+        .saleon {
+            background: $blue;
+            color: $white;
+            font-size: 13px;
+            font-weight: 700;
+            left: -26px;
+            padding: 2px 25px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 16px;
+            transform: rotate(-44deg);
+        }
+      }
+}
